@@ -56,6 +56,7 @@ public class Game {
   }
 
   private void startGame() {
+    players.add(new ComputerPlayer(board.getStartTile(), "Computer", ui));
     do {
       String playerName = ui.promptForNewPlayerName();
       if (playerName != null && playerName.length() > 0) {
