@@ -20,7 +20,7 @@ public class TierOneTests {
 
   }
 
-  /*@Test
+  @Test
   public void tileConstructionTest_2() {
     // implement the constructor in Tile so that it sets the next and prev links correctly
     DummyTile sut1 = new DummyTile();
@@ -32,9 +32,9 @@ public class TierOneTests {
     assertEquals(sut2, sut1.getPrev(), "Link to sut1 prev tile not set correctly");
     assertEquals(sut1, sut2.getPrev(), "Link to sut2 prev tile not set correctly");
     assertEquals(sut1, sut2.getNext(), "Link to sut2 next tile not set correctly");
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void tileConstructionTest_3() {
     // implement the constructor in Tile so that it sets the next and prev links correctly
     DummyTile sut1 = new DummyTile();
@@ -46,9 +46,9 @@ public class TierOneTests {
     assertEquals(sut1, sut3.getNext(), "Link to sut3 next tile not set correctly");
     assertEquals(sut2, sut3.getPrev(), "Link to sut3 prev tile not set correctly");
     assertEquals(sut1, sut2.getPrev(), "Link to sut2 prev tile not set correctly");
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void tileConstructionTest_4() {
     // implement the constructor in Tile so that it sets the next and prev links correctly
     DummyTile sut1 = new DummyTile();
@@ -62,9 +62,9 @@ public class TierOneTests {
     assertEquals(sut2, sut1.getPrev(), "Link to sut1 prev tile not set correctly");
     assertEquals(sut3, sut2.getPrev(), "Link to sut2 prev tile not set correctly");
     assertEquals(sut1, sut2.getNext(), "Link to sut2 prev tile not set correctly");
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void tileConstructiontest_5() {
     DummyTile start = new DummyTile();
     ArrayList<Tile> tiles = new ArrayList<>();
@@ -84,10 +84,10 @@ public class TierOneTests {
 
       n = nNew;
     }
-  }*/
+  }
 
 
-  /*@Test
+  @Test
   public void propertyTest_buy_ok() {
     // implement the Property buy operation according to the Design document sequence diagram
     Start s = new Start();
@@ -102,7 +102,7 @@ public class TierOneTests {
     assertEquals(true, sut.isOwner(p), "Property owner not correct set");
     assertEquals(originalFunds - sut.getPrice(), p.getFunds(), "Funds not correctly deduced");
     assertEquals(true, ret, "buy should return true if the property is bought");
-  }*/
+  }
 
   /*@Test
   public void propertyTest_buy_hasOwner() {

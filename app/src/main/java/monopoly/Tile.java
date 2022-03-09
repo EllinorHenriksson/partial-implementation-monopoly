@@ -19,7 +19,7 @@ public abstract class Tile {
     // TODO: set the prev and next references correctly
     // the next and prev links should point to the object created
 
-    next = prev = this; // this is not correct remove
+    next = prev = this;
 
     playersOnTile = new ArrayList<>();
   }
@@ -30,8 +30,10 @@ public abstract class Tile {
     // note that no complex logic like loops or if statements are needed
     // work out the correct way of setting the links using object diagrams
 
-    prev = next = null; // this is not correct, remove
-    prevTile.next = prevTile.prev = null; // this is not correct, remove    
+    prev = prevTile;
+    next = prevTile.next;
+    prevTile.next.prev = this;
+    prevTile.next = this;
 
     playersOnTile = new ArrayList<>();
   }
