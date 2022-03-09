@@ -104,7 +104,7 @@ public class TierOneTests {
     assertEquals(true, ret, "buy should return true if the property is bought");
   }
 
-  /*@Test
+  @Test
   public void propertyTest_buy_hasOwner() {
     // implement the Property buy operation according to the Design document sequence diagram
     Start s = new Start();
@@ -126,9 +126,9 @@ public class TierOneTests {
 
     assertEquals(originalFunds, p.getFunds(), "Funds should not be deduced");
     assertEquals(false, ret, "buy should return false if the property is not bought");
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void propertyTest_buy_notOnTile() {
     // implement the Property buy operation according to the Design document sequence diagram
     Start s = new Start();
@@ -143,9 +143,9 @@ public class TierOneTests {
     assertEquals(false, sut.isOwner(p), "Property owner should not be set");
     assertEquals(originalFunds, p.getFunds(), "Funds should not be deduced");
     assertEquals(false, ret, "buy should return false if the property is not bought");
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void propertyTest_buy_noFunds() {
     // implement the Property buy operation according to the Design document sequence diagram
     Start s = new Start();
@@ -160,7 +160,7 @@ public class TierOneTests {
 
     assertEquals(false, sut.isOwner(p), "Property owner should not be set");
     assertEquals(false, ret, "buy should return false if the property is not bought");
-  }*/
+  }
 
   
   

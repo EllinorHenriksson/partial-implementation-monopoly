@@ -43,7 +43,18 @@ public class Property extends Tile {
   public boolean buy(Player player) {
     // TODO: Implement
     // you can only buy a property if it is not owned by anyone
- 
+
+    boolean onTile = isOnTile(player);
+    boolean noOwner = isOwner(null);
+
+    if (onTile && noOwner) {
+      Boolean hasPayed = player.deduceFunds(price);
+      if (hasPayed) {
+        setOwner(player);
+        return true;
+      }
+    }
+
     return false;
   }
 
