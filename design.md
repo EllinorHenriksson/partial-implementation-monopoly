@@ -41,3 +41,6 @@ Shows the exact calls made to execute the sequence diagram. Note that in the imp
 Show the exact calls that should be made to implement the Property.buy operation.
 ![Property buy sequence diagram](img/buy_sequence_diagram.jpg)
 
+## Updated class diagram
+![class diagram](img/updated_class_diagram.jpg)
+
